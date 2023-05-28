@@ -3,27 +3,33 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   font-family: Helvetica, sans-serif;
 }
-#main {
+.clear{
+  clear: both;
 }
+#main {}
+
 /* code cho thẻ header */
 #header {
   height: 50px;
   background-color: black;
-  position: fixed ;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
   z-index: 2;
 }
+
 /* tệp cha của thanh tìm kiếm  */
 #header .search-button {
   float: right;
   display: inline-block;
 }
+
 /* chỉnh thanh tìm kiếm */
 #header .btn-icon {
   color: white;
@@ -31,24 +37,28 @@ html {
   line-height: 50px;
   padding: 0 36px 0 36px;
 }
+
 /* khi chọn phần tử sẽ đổi màu */
 #header .btn-icon:hover {
   cursor: pointer;
   color: white !important;
   background-color: red !important;
 }
+
 /* code cho tất cả  nav */
 #nav {
   display: inline-block;
 }
+
 /* code từ thẻ nav đến thẻ li và thẻ a trong toàn bộ tệp ID=nav */
-#nav > li > a {
+#nav>li>a {
   font-weight: bold;
   position: relative;
   list-style: none;
   color: #000;
   font-size: 18px;
 }
+
 /* code cho thẻ a thuộc tệp con subnav */
 #nav .subnav a {
   color: #000;
@@ -56,11 +66,13 @@ html {
   padding: 0 20px;
   font-size: 16px;
 }
+
 /*code cho tất cả thẻ li thuộc tệp cha nav */
-#nav > li {
+#nav>li {
   display: inline-block;
   text-transform: uppercase;
 }
+
 /* điều chỉnh tất cả thẻ a(thẻ a nằm trong thẻ li) thuộc tệp cha nav */
 #nav li a {
   color: white;
@@ -69,17 +81,20 @@ html {
   display: inline-block;
   padding: 0 18px;
 }
+
 /* điều chỉnh (khi chọn phần tử sẽ hiện màu lên)  */
-#nav > li:hover > a,
+#nav>li:hover>a,
 #nav .subnav li:hover a {
   color: #000 !important;
   background-color: #ccc !important;
   width: 100%;
 }
+
 /* ẩn hiện bảng tin trong thẻ subnav */
-#nav > li:hover > .subnav {
+#nav>li:hover>.subnav {
   display: block;
 }
+
 /* điều chỉnh các phần tử trong thẻ subnav */
 #nav .subnav {
   min-width: 160px;
@@ -91,12 +106,14 @@ html {
   display: none;
   box-shadow: 2px 2px 4px #888888;
 }
+
 #slide {
   margin-top: 46px;
   padding-top: 50%;
   background: url(./img/img/anh-nui.jpg) top center / cover no-repeat;
   position: relative;
 }
+
 #slide .slide-content {
   position: absolute;
   bottom: 49px;
@@ -104,23 +121,71 @@ html {
   transform: translateX(-50%);
   text-align: center;
 }
-#slide .text-heading{
-  font-size: 27px;
-  font-weight:500;
+
+#slide .text-heading {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 6px;
+  font-style: italic;
+
 }
-#slide .text-description{
+
+#slide .text-description {
   font-size: 20px;
   margin-top: 30px;
 }
-/* code cho phần nội dung */
-#content {
 
-}
-#content .content-section{
+/* code cho phần nội dung */
+#content {}
+
+#content .content-section {
   width: 850px;
   padding: 71px 0;
   margin-left: auto;
   margin-right: auto;
 }
-#footer {
+
+#content .heading-section {
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 6px;
 }
+
+#content .section-subheading {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 30px;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+#content .about-content {
+  margin-top: 30px;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+#content .member-list {
+  margin-top: 47px;
+  
+}
+
+#content .member-items {
+  float: left;
+  width:  33.33333%;
+  margin-bottom: 47px;
+  text-align: center;
+}
+
+#content .member-img {
+  width: 200px;
+  height: 200px;
+  margin-top: 17px;
+}
+
+#content .member-name {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#footer {}
